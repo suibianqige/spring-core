@@ -7,8 +7,7 @@
 	http://www.springframework.org/schema/aop
 	http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
 	
-	<bean id="aspectBiz" class="cn.ucaner.app.aspect.AspectBiz"></bean>
-	
+	<bean id="aspectBiz" class="cn.ucaner.aop.aspect.AspectBiz"></bean>
 	<aop:config>
 		<aop:aspect id="taAspectAOP" ref="aspectBiz" >
 			<aop:pointcut expression="execution(* cn.ucaner.aop.aspect.AspectBiz.*(..))" id="tqPiontcut"/>
